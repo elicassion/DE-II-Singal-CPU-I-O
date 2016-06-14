@@ -1,4 +1,4 @@
-`timescale 1 ns/ 100 ps
+`timescale 1 ps/ 1 ps
 module sc_computer_tb;
 // constants                                           
 // general purpose registers

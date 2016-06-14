@@ -14,7 +14,7 @@ module sc_cpu (clock,resetn,inst,mem,pc,wmem,alu,data);
    
    wire          e = sext & inst[15];          // positive or negative sign at sext signal
    wire [15:0]   imm = {16{e}};                // high 16 sign bit
-   wire [31:0]   offset = {imm[13:0],inst[15:0],1'b0,1'b0};   //offset(include sign extend)
+   wire [31:0]   offset = {imm[13:0], inst[15:0], 1'b0,1'b0};   //offset(include sign extend)
    
    wire [31:0]   immediate = {imm,inst[15:0]}; // sign extend to high 16
    
